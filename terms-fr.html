@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions d'utilisation — SMSplode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07060f; --surface: #0f0d1c; --border: #1e1a33;
+    --primary: #8c3cdc; --primary-dim: rgba(140,60,220,0.15);
+    --danger: #ef4444; --danger-dim: rgba(239,68,68,0.1);
+    --text: #e8e4f0; --text-dim: #7a7494;
+    --mono: 'Space Mono', monospace; --sans: 'DM Sans', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.75; min-height: 100vh; }
+  body::before { content: ''; position: fixed; top: -200px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(239,68,68,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+  .wrapper { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+  .header { text-align: center; margin-bottom: 56px; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .bomb { font-size: 48px; display: block; margin-bottom: 16px; animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+  .app-name { font-family: var(--mono); font-size: 28px; font-weight: 700; letter-spacing: -1px; background: linear-gradient(135deg, #8c3cdc, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .page-title { font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin-top: 8px; }
+  .lang-switch { display: inline-flex; gap: 8px; margin-top: 20px; }
+  .lang-switch a { font-family: var(--mono); font-size: 11px; padding: 4px 12px; border-radius: 20px; text-decoration: none; transition: all 0.2s; }
+  .lang-switch a.active { background: var(--primary); color: #fff; }
+  .lang-switch a:not(.active) { border: 1px solid var(--border); color: var(--text-dim); }
+  .lang-switch a:not(.active):hover { border-color: var(--primary); color: var(--primary); }
+  .meta { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 48px; }
+  .meta-item { font-family: var(--mono); font-size: 11px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+  .meta-item span { color: var(--primary); }
+  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; margin-bottom: 16px; transition: border-color 0.2s; }
+  .section:hover { border-color: rgba(140,60,220,0.3); }
+  .section-title { font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  p { margin-bottom: 12px; color: #c8c4d8; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+  ul { list-style: none; padding: 0; margin: 12px 0; }
+  ul li { font-size: 15px; color: #c8c4d8; padding: 6px 0 6px 20px; position: relative; }
+  ul li::before { content: '▸'; position: absolute; left: 0; color: var(--primary); font-size: 12px; }
+  .warning { background: var(--danger-dim); border: 1px solid rgba(239,68,68,0.3); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #fca5a5; }
+  .warning strong { color: #f87171; font-weight: 600; }
+  .highlight { background: var(--primary-dim); border: 1px solid rgba(140,60,220,0.3); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #d0c8e8; }
+  .highlight strong { color: #c084fc; font-weight: 600; }
+  strong { color: var(--text); font-weight: 600; }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact-card { border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; margin-top: 8px; text-decoration: none; transition: all 0.2s; }
+  .contact-card:hover { border-color: var(--primary); background: var(--primary-dim); }
+  .contact-card .icon { font-size: 24px; }
+  .contact-card .label { font-size: 13px; color: var(--text-dim); }
+  .contact-card .value { font-family: var(--mono); font-size: 14px; color: var(--text); }
+  .footer { text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-dim); }
+  .footer .studio { font-family: var(--mono); color: var(--primary); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 4px; }
+  @media (max-width: 600px) { .wrapper { padding: 40px 16px 60px; } .section { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <span class="bomb">💣</span>
+    <div class="app-name">SMSplode</div>
+    <div class="page-title">Conditions d'utilisation</div>
+    <div class="lang-switch">
+      <a href="terms-fr.html" class="active">🇫🇷 Français</a>
+      <a href="terms-en.html">🇬🇧 English</a>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div class="meta-item">📅 Dernière mise à jour : <span>Avril 2026</span></div>
+    <div class="meta-item">🏢 Éditeur : <span>OrionWavesStudio</span></div>
+    <div class="meta-item">📍 France</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">01 — Acceptation des conditions</div>
+    <p>En téléchargeant ou en utilisant l'application <strong>SMSplode</strong>, vous acceptez d'être lié par les présentes Conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">02 — Description du service</div>
+    <p>SMSplode est une application mobile permettant d'envoyer des séquences répétées de SMS à des destinataires <strong>consentants</strong>, à des fins de divertissement personnel entre amis.</p>
+    <div class="highlight">
+      <strong>Usage prévu :</strong> blagues entre amis, réveils humoristiques, rappels insistants dans un contexte ludique et consensuel.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">03 — Usage interdit</div>
+    <div class="warning">
+      <strong>⚠️ Utilisation responsable obligatoire</strong>
+    </div>
+    <p>Il est strictement interdit d'utiliser SMSplode pour :</p>
+    <ul>
+      <li>Harceler, menacer ou intimider toute personne</li>
+      <li>Envoyer des SMS non sollicités (spam)</li>
+      <li>Contacter des personnes n'ayant pas consenti à recevoir vos messages</li>
+      <li>Toute activité illégale selon la législation applicable</li>
+      <li>Perturber les réseaux de télécommunication</li>
+      <li>Usurper l'identité d'une autre personne</li>
+    </ul>
+    <p>L'envoi de SMS non sollicités est <strong>illégal</strong> dans la plupart des pays et peut entraîner des poursuites judiciaires. OrionWavesStudio décline toute responsabilité en cas d'utilisation abusive de l'application.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">04 — Responsabilité de l'utilisateur</div>
+    <p>Vous êtes <strong>seul responsable</strong> de l'utilisation que vous faites de SMSplode et des messages que vous envoyez. Vous vous engagez à :</p>
+    <ul>
+      <li>N'utiliser l'application qu'avec le consentement explicite des destinataires</li>
+      <li>Respecter la législation de votre pays en matière de communications électroniques</li>
+      <li>Ne pas utiliser l'application à des fins commerciales sans autorisation préalable</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">05 — Achats Premium</div>
+    <p>SMSplode propose un achat unique <strong>Premium</strong> débloquant des fonctionnalités supplémentaires. Cet achat est :</p>
+    <ul>
+      <li>Traité par Google Play — soumis à leurs conditions de vente</li>
+      <li>Non remboursable sauf disposition contraire de Google Play</li>
+      <li>Lié à votre compte Google — non transférable</li>
+      <li>À vie — sans abonnement récurrent</li>
+    </ul>
+    <div class="highlight">
+      <strong>Restauration :</strong> en cas de réinstallation, utilisez le bouton « Restaurer l'achat » dans les paramètres pour récupérer votre Premium.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">06 — Propriété intellectuelle</div>
+    <p>L'application SMSplode, son code, ses graphismes, ses animations et son contenu sont la propriété exclusive d'<strong>OrionWavesStudio</strong>. Toute reproduction, modification ou distribution sans autorisation écrite est interdite.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">07 — Limitation de responsabilité</div>
+    <p>SMSplode est fourni « tel quel ». OrionWavesStudio ne saurait être tenu responsable :</p>
+    <ul>
+      <li>Des conséquences de l'utilisation abusive de l'application</li>
+      <li>Des frais SMS facturés par votre opérateur téléphonique</li>
+      <li>Des interruptions de service ou bugs</li>
+      <li>Des dommages indirects résultant de l'utilisation de l'app</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">08 — Résiliation</div>
+    <p>OrionWavesStudio se réserve le droit de suspendre l'accès à l'application en cas de violation des présentes conditions, sans préavis ni remboursement.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">09 — Droit applicable</div>
+    <p>Les présentes conditions sont régies par le <strong>droit français</strong>. En cas de litige, les tribunaux français seront compétents.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">10 — Modifications</div>
+    <p>OrionWavesStudio se réserve le droit de modifier ces conditions à tout moment. Les modifications entrent en vigueur dès leur publication sur cette page.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">11 — Contact</div>
+    <p>Pour toute question concernant ces conditions d'utilisation :</p>
+    <a href="mailto:orionwavesstudio@gmail.com" class="contact-card">
+      <div class="icon">✉️</div>
+      <div>
+        <div class="label">Email</div>
+        <div class="value">orionwavesstudio@gmail.com</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <span class="studio">OrionWavesStudio</span>
+    © 2026 — SMSplode. Tous droits réservés.
+  </div>
+
+</div>
+</body>
+</html>

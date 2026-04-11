@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — SMSplode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07060f;
+    --surface: #0f0d1c;
+    --border: #1e1a33;
+    --primary: #8c3cdc;
+    --primary-dim: rgba(140,60,220,0.15);
+    --accent: #ef4444;
+    --text: #e8e4f0;
+    --text-dim: #7a7494;
+    --mono: 'Space Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* Background ambiance */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(140,60,220,0.12) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bomb {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .app-name {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #8c3cdc, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-title {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 8px;
+  }
+
+  .lang-switch {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .lang-switch a {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .lang-switch a.active {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  .lang-switch a:not(.active) {
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+
+  .lang-switch a:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  /* Meta */
+  .meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .meta-item {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .meta-item span { color: var(--primary); }
+
+  /* Section */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+
+  .section:hover { border-color: rgba(140,60,220,0.3); }
+
+  .section-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p { margin-bottom: 12px; color: #c8c4d8; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: #c8c4d8;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  /* Highlight box */
+  .highlight {
+    background: var(--primary-dim);
+    border: 1px solid rgba(140,60,220,0.3);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #d0c8e8;
+  }
+
+  .highlight strong {
+    color: #c084fc;
+    font-weight: 600;
+  }
+
+  /* No data badge */
+  .no-data-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.25);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: #4ade80;
+    margin: 8px 0 16px;
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Contact */
+  .contact-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .contact-card:hover {
+    border-color: var(--primary);
+    background: var(--primary-dim);
+  }
+
+  .contact-card .icon { font-size: 24px; }
+  .contact-card .label { font-size: 13px; color: var(--text-dim); }
+  .contact-card .value { font-family: var(--mono); font-size: 14px; color: var(--text); }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  .footer .studio {
+    font-family: var(--mono);
+    color: var(--primary);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: 600px) {
+    .wrapper { padding: 40px 16px 60px; }
+    .section { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <span class="bomb">💣</span>
+    <div class="app-name">SMSplode</div>
+    <div class="page-title">Politique de confidentialité</div>
+    <div class="lang-switch">
+      <a href="privacy-fr.html" class="active">🇫🇷 Français</a>
+      <a href="privacy-en.html">🇬🇧 English</a>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div class="meta-item">📅 Dernière mise à jour : <span>Avril 2026</span></div>
+    <div class="meta-item">🏢 Éditeur : <span>OrionWavesStudio</span></div>
+    <div class="meta-item">📍 France</div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-title">01 — Introduction</div>
+    <p>La présente Politique de confidentialité décrit comment l'application <strong>SMSplode</strong>, développée par <strong>OrionWavesStudio</strong>, traite vos données lorsque vous l'utilisez.</p>
+    <p>En utilisant SMSplode, vous acceptez les pratiques décrites dans ce document.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-title">02 — Données collectées</div>
+    <div class="no-data-badge">✅ Aucune donnée transmise à un serveur</div>
+    <p>SMSplode fonctionne <strong>entièrement sur votre appareil</strong>. Nous ne collectons, ne stockons ni ne transmettons aucune donnée personnelle sur nos serveurs.</p>
+    <p>Les données suivantes sont stockées <strong>localement</strong> sur votre appareil uniquement :</p>
+    <ul>
+      <li>Votre pseudo et avatar (personnalisation du profil)</li>
+      <li>Vos préférences (thème, langue, skins, sons)</li>
+      <li>L'historique des bombardements envoyés (Premium uniquement)</li>
+      <li>Les templates de messages créés ou utilisés</li>
+      <li>Le statut de votre achat Premium (géré par Google Play)</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-title">03 — Permissions requises</div>
+    <p>SMSplode demande les permissions Android suivantes, strictement nécessaires à son fonctionnement :</p>
+    <ul>
+      <li><strong>SEND_SMS</strong> — pour envoyer des SMS à vos contacts</li>
+      <li><strong>READ_CONTACTS</strong> — pour sélectionner un contact comme destinataire (optionnel)</li>
+      <li><strong>POST_NOTIFICATIONS</strong> — pour afficher la progression de l'envoi en cours</li>
+    </ul>
+    <div class="highlight">
+      <strong>Important :</strong> ces permissions ne sont utilisées que lorsque vous les activez explicitement. Aucune donnée issue de ces permissions n'est transmise à un tiers.
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-title">04 — Achats in-app</div>
+    <p>L'achat de la version <strong>Premium</strong> est traité exclusivement par <strong>Google Play Billing</strong>. OrionWavesStudio n'accède pas à vos informations de paiement (numéro de carte, etc.).</p>
+    <p>Google Play peut collecter des données liées à la transaction conformément à sa propre <a href="https://policies.google.com/privacy" target="_blank">politique de confidentialité</a>.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-title">05 — Services tiers</div>
+    <p>SMSplode peut intégrer les services suivants :</p>
+    <ul>
+      <li><strong>Google Play Billing</strong> — gestion des achats in-app</li>
+      <li><strong>Google Play Review API</strong> — demande d'avis sur l'app store</li>
+    </ul>
+    <p>Ces services sont soumis à leurs propres politiques de confidentialité. SMSplode ne partage aucune donnée personnelle avec des partenaires publicitaires.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-title">06 — Mineurs</div>
+    <p>SMSplode est destiné aux personnes âgées de <strong>13 ans et plus</strong>. Nous ne collectons pas sciemment de données auprès d'enfants de moins de 13 ans.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-title">07 — Vos droits (RGPD)</div>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+    <ul>
+      <li>Droit d'accès à vos données</li>
+      <li>Droit de rectification</li>
+      <li>Droit à l'effacement (supprimable directement via « Effacer les données » dans les paramètres Android)</li>
+      <li>Droit à la portabilité</li>
+    </ul>
+    <div class="highlight">
+      Toutes vos données étant stockées localement, vous pouvez les supprimer à tout moment via <strong>Paramètres Android → Applications → SMSplode → Effacer les données</strong>.
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-title">08 — Modifications</div>
+    <p>OrionWavesStudio se réserve le droit de modifier cette politique. En cas de changement significatif, nous vous en informerons via une mise à jour de l'application.</p>
+    <p>La date de dernière modification figure en haut de ce document.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="section">
+    <div class="section-title">09 — Contact</div>
+    <p>Pour toute question concernant cette politique de confidentialité :</p>
+    <a href="mailto:orionwavesstudio@gmail.com" class="contact-card">
+      <div class="icon">✉️</div>
+      <div>
+        <div class="label">Email</div>
+        <div class="value">orionwavesstudio@gmail.com</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <span class="studio">OrionWavesStudio</span>
+    © 2026 — SMSplode. Tous droits réservés.
+  </div>
+
+</div>
+</body>
+</html>
