@@ -19,83 +19,251 @@
     --mono: 'Space Mono', monospace;
     --sans: 'DM Sans', sans-serif;
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.75; min-height: 100vh; }
-  body::before { content: ''; position: fixed; top: -200px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(140,60,220,0.12) 0%, transparent 70%); pointer-events: none; z-index: 0; }
-  .wrapper { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
-  .header { text-align: center; margin-bottom: 56px; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
-  .bomb { font-size: 48px; display: block; margin-bottom: 16px; animation: pulse 3s ease-in-out infinite; }
-  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
-  .app-name { font-family: var(--mono); font-size: 28px; font-weight: 700; letter-spacing: -1px; background: linear-gradient(135deg, #8c3cdc, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .page-title { font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin-top: 8px; }
-  .lang-switch { display: inline-flex; gap: 8px; margin-top: 20px; }
-  .lang-switch a { font-family: var(--mono); font-size: 11px; padding: 4px 12px; border-radius: 20px; text-decoration: none; transition: all 0.2s; }
-  .lang-switch a.active { background: var(--primary); color: #fff; }
-  .lang-switch a:not(.active) { border: 1px solid var(--border); color: var(--text-dim); }
-  .lang-switch a:not(.active):hover { border-color: var(--primary); color: var(--primary); }
-  .meta { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 48px; }
-  .meta-item { font-family: var(--mono); font-size: 11px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(140,60,220,0.12) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bomb {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .app-name {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #8c3cdc, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-title {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-top: 8px;
+  }
+
+  .lang-switch {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .lang-switch a {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .lang-switch a.active {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  .lang-switch a:not(.active) {
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+
+  .lang-switch a:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  .meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .meta-item {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
   .meta-item span { color: var(--primary); }
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; margin-bottom: 16px; transition: border-color 0.2s; }
+
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+
   .section:hover { border-color: rgba(140,60,220,0.3); }
-  .section-title { font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .section-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
   p { margin-bottom: 12px; color: #c8c4d8; font-size: 15px; }
   p:last-child { margin-bottom: 0; }
+
   ul { list-style: none; padding: 0; margin: 12px 0; }
-  ul li { font-size: 15px; color: #c8c4d8; padding: 6px 0 6px 20px; position: relative; }
-  ul li::before { content: '▸'; position: absolute; left: 0; color: var(--primary); font-size: 12px; }
-  .highlight { background: var(--primary-dim); border: 1px solid rgba(140,60,220,0.3); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #d0c8e8; }
+
+  ul li {
+    font-size: 15px;
+    color: #c8c4d8;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  .highlight {
+    background: var(--primary-dim);
+    border: 1px solid rgba(140,60,220,0.3);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #d0c8e8;
+  }
+
   .highlight strong { color: #c084fc; font-weight: 600; }
-  .no-data-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.25); border-radius: 20px; padding: 8px 16px; font-family: var(--mono); font-size: 12px; color: #4ade80; margin: 8px 0 16px; }
+
+  .no-data-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.25);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: #4ade80;
+    margin: 8px 0 16px;
+  }
+
   strong { color: var(--text); font-weight: 600; }
+
   a { color: var(--primary); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .contact-card { border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; margin-top: 8px; text-decoration: none; transition: all 0.2s; }
-  .contact-card:hover { border-color: var(--primary); background: var(--primary-dim); }
+
+  .contact-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .contact-card:hover {
+    border-color: var(--primary);
+    background: var(--primary-dim);
+  }
+
   .contact-card .icon { font-size: 24px; }
   .contact-card .label { font-size: 13px; color: var(--text-dim); }
   .contact-card .value { font-family: var(--mono); font-size: 14px; color: var(--text); }
 
-  /* ── Footer ── */
-  .footer { text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-dim); }
-  .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
-  .footer-links a {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
     color: var(--text-dim);
-    text-decoration: none;
-    padding: 6px 14px;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    transition: all 0.2s;
   }
-  .footer-links a:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    background: var(--primary-dim);
-    text-decoration: none;
-  }
+
   .footer .studio {
     font-family: var(--mono);
+    color: var(--primary);
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
-    color: var(--primary);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
-  }
-  .footer .studio:hover {
-    border-bottom-color: var(--primary);
-    text-decoration: none;
   }
 
-  @media (max-width: 600px) { .wrapper { padding: 40px 16px 60px; } .section { padding: 20px; } }
+  @media (max-width: 600px) {
+    .wrapper { padding: 40px 16px 60px; }
+    .section { padding: 20px; }
+  }
 </style>
 </head>
 <body>
@@ -204,12 +372,7 @@
   </div>
 
   <div class="footer">
-    <div class="footer-links">
-      <a href="smsplode-privacy-en.html">🔒 Privacy Policy</a>
-      <a href="smsplode-terms-en.html">📄 Terms of Use</a>
-    </div>
-    <a href="https://orionwavesstudio.com/" target="_blank" class="studio">OrionWavesStudio</a>
-    <br>
+    <span class="studio">OrionWavesStudio</span>
     © 2026 — SMSplode. All rights reserved.
   </div>
 
