@@ -56,8 +56,45 @@
   .contact-card .icon { font-size: 24px; }
   .contact-card .label { font-size: 13px; color: var(--text-dim); }
   .contact-card .value { font-family: var(--mono); font-size: 14px; color: var(--text); }
+
+  /* ── Footer ── */
   .footer { text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-dim); }
-  .footer .studio { font-family: var(--mono); color: var(--primary); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+  .footer-links a {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+  .footer-links a:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-dim);
+    text-decoration: none;
+  }
+  .footer .studio {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 4px;
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .footer .studio:hover {
+    border-bottom-color: var(--primary);
+    text-decoration: none;
+  }
+
   @media (max-width: 600px) { .wrapper { padding: 40px 16px 60px; } .section { padding: 20px; } }
 </style>
 </head>
@@ -69,8 +106,8 @@
     <div class="app-name">SMSplode</div>
     <div class="page-title">Privacy Policy</div>
     <div class="lang-switch">
-      <a href="privacy-fr.html">🇫🇷 Français</a>
-      <a href="privacy-en.html" class="active">🇬🇧 English</a>
+      <a href="smsplode-privacy-fr.html">🇫🇷 Français</a>
+      <a href="smsplode-privacy-en.html" class="active">🇬🇧 English</a>
     </div>
   </div>
 
@@ -167,7 +204,12 @@
   </div>
 
   <div class="footer">
-    <span class="studio">OrionWavesStudio</span>
+    <div class="footer-links">
+      <a href="smsplode-privacy-en.html">🔒 Privacy Policy</a>
+      <a href="smsplode-terms-en.html">📄 Terms of Use</a>
+    </div>
+    <a href="https://orionwavesstudio.com/" target="_blank" class="studio">OrionWavesStudio</a>
+    <br>
     © 2026 — SMSplode. All rights reserved.
   </div>
 
