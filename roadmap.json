@@ -21,27 +21,6 @@
     }
   },
   {
-    "status": "done",
-    "title": {
-      "fr": "ASCEND v2.5 — Monétisation & RGPD",
-      "en": "ASCEND v2.5 — Monetization & GDPR",
-      "de": "ASCEND v2.5 — Monetarisierung & DSGVO",
-      "it": "ASCEND v2.5 — Monetizzazione & GDPR",
-      "es": "ASCEND v2.5 — Monetización & RGPD",
-      "pt": "ASCEND v2.5 — Monetização & LGPD",
-      "zh": "ASCEND v2.5 — 变现 & GDPR"
-    },
-    "desc": {
-      "fr": "AdMob, RGPD/UMP, In-App Review, domaine orionwavesstudio.com.",
-      "en": "AdMob, GDPR/UMP, In-App Review, orionwavesstudio.com domain.",
-      "de": "AdMob, DSGVO/UMP, In-App-Bewertung, Domain orionwavesstudio.com.",
-      "it": "AdMob, GDPR/UMP, In-App Review, dominio orionwavesstudio.com.",
-      "es": "AdMob, RGPD/UMP, In-App Review, dominio orionwavesstudio.com.",
-      "pt": "AdMob, LGPD/UMP, In-App Review, domínio orionwavesstudio.com.",
-      "zh": "AdMob、GDPR/UMP、应用内评价、orionwavesstudio.com域名。"
-    }
-  },
-  {
   "status": "done",
   "title": {
     "fr": "ASCEND v3.0.1 — Correctifs & Améliorations",
