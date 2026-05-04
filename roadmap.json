@@ -63,6 +63,27 @@
   }
 },
   {
+  "status": "done",
+  "title": {
+    "fr": "SMSplode — Lancement Production",
+    "en": "SMSplode — Production Launch",
+    "de": "SMSplode — Produktionsstart",
+    "it": "SMSplode — Lancio in Produzione",
+    "es": "SMSplode — Lanzamiento en Producción",
+    "pt": "SMSplode — Lançamento em Produção",
+    "zh": "SMSplode — 正式上线"
+  },
+  "desc": {
+    "fr": "Bombardement SMS, animation 3D, sons custom, mode furtif, 10 destinataires. 177 pays.",
+    "en": "SMS bombing, 3D animation, custom sounds, stealth mode, 10 recipients. 177 countries.",
+    "de": "SMS-Bombardierung, 3D-Animation, eigene Töne, Tarnmodus, 10 Empfänger. 177 Länder.",
+    "it": "Bombardamento SMS, animazione 3D, suoni custom, modalità furtiva, 10 destinatari. 177 paesi.",
+    "es": "Bombardeo SMS, animación 3D, sonidos custom, modo sigiloso, 10 destinatarios. 177 países.",
+    "pt": "Bombardeio SMS, animação 3D, sons custom, modo furtivo, 10 destinatários. 177 países.",
+    "zh": "SMS轰炸、3D动画、自定义音效、隐身模式、10位接收者。177个国家。"
+  }
+},
+  {
     "status": "active",
     "title": {
       "fr": "SMSplode v3.1.2 — Publication Production",
@@ -83,6 +104,27 @@
       "zh": "AdMob集成、GDPR、小部件修复、全球发布。"
     }
   },
+  {
+  "status": "soon",
+  "title": {
+    "fr": "Projet PULSAR — Lancement Production",
+    "en": "Project PULSAR — Production Launch",
+    "de": "Projekt PULSAR — Produktionsstart",
+    "it": "Progetto PULSAR — Lancio in Produzione",
+    "es": "Proyecto PULSAR — Lanzamiento en Producción",
+    "pt": "Projeto PULSAR — Lançamento em Produção",
+    "zh": "PULSAR项目 — 正式上线"
+  },
+  "desc": {
+    "fr": "Jeu de réflexes circulaires avec IA adaptative. Disponible sur Google Play.",
+    "en": "Circular reflex game with adaptive AI. Available on Google Play.",
+    "de": "Kreisförmiges Reflexspiel mit adaptiver KI. Auf Google Play verfügbar.",
+    "it": "Gioco di riflessi circolari con IA adattiva. Disponibile su Google Play.",
+    "es": "Juego de reflejos circulares con IA adaptativa. Disponible en Google Play.",
+    "pt": "Jogo de reflexos circulares com IA adaptativa. Disponível no Google Play.",
+    "zh": "环形反应游戏，搭载自适应AI。即将登陆Google Play。"
+  }
+},
   {
     "status": "active",
     "title": {
