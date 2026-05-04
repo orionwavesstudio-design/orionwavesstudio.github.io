@@ -1,0 +1,128 @@
+[
+  {
+    "status": "done",
+    "title": {
+      "fr": "ASCEND v1.0 — Lancement Production",
+      "en": "ASCEND v1.0 — Production Launch",
+      "de": "ASCEND v1.0 — Produktionsstart",
+      "it": "ASCEND v1.0 — Lancio in Produzione",
+      "es": "ASCEND v1.0 — Lanzamiento en Producción",
+      "pt": "ASCEND v1.0 — Lançamento em Produção",
+      "zh": "ASCEND v1.0 — 正式上线"
+    },
+    "desc": {
+      "fr": "Suivi d'humeur, XP, niveaux, badges, routines. 177 pays, 6 langues.",
+      "en": "Mood tracking, XP, levels, badges, routines. 177 countries, 6 languages.",
+      "de": "Stimmungstracking, XP, Level, Badges, Routinen. 177 Länder, 6 Sprachen.",
+      "it": "Monitoraggio umore, XP, livelli, badge, routine. 177 paesi, 6 lingue.",
+      "es": "Seguimiento del humor, XP, niveles, insignias, rutinas. 177 países, 6 idiomas.",
+      "pt": "Rastreamento de humor, XP, níveis, badges, rotinas. 177 países, 6 idiomas.",
+      "zh": "情绪追踪、经验值、等级、徽章、例行程序。177个国家，6种语言。"
+    }
+  },
+  {
+    "status": "done",
+    "title": {
+      "fr": "ASCEND v2.5 — Monétisation & RGPD",
+      "en": "ASCEND v2.5 — Monetization & GDPR",
+      "de": "ASCEND v2.5 — Monetarisierung & DSGVO",
+      "it": "ASCEND v2.5 — Monetizzazione & GDPR",
+      "es": "ASCEND v2.5 — Monetización & RGPD",
+      "pt": "ASCEND v2.5 — Monetização & LGPD",
+      "zh": "ASCEND v2.5 — 变现 & GDPR"
+    },
+    "desc": {
+      "fr": "AdMob, RGPD/UMP, In-App Review, domaine orionwavesstudio.com.",
+      "en": "AdMob, GDPR/UMP, In-App Review, orionwavesstudio.com domain.",
+      "de": "AdMob, DSGVO/UMP, In-App-Bewertung, Domain orionwavesstudio.com.",
+      "it": "AdMob, GDPR/UMP, In-App Review, dominio orionwavesstudio.com.",
+      "es": "AdMob, RGPD/UMP, In-App Review, dominio orionwavesstudio.com.",
+      "pt": "AdMob, LGPD/UMP, In-App Review, domínio orionwavesstudio.com.",
+      "zh": "AdMob、GDPR/UMP、应用内评价、orionwavesstudio.com域名。"
+    }
+  },
+  {
+    "status": "active",
+    "title": {
+      "fr": "ASCEND v3.0 — Optimisation & ASO",
+      "en": "ASCEND v3.0 — Optimization & ASO",
+      "de": "ASCEND v3.0 — Optimierung & ASO",
+      "it": "ASCEND v3.0 — Ottimizzazione & ASO",
+      "es": "ASCEND v3.0 — Optimización & ASO",
+      "pt": "ASCEND v3.0 — Otimização & ASO",
+      "zh": "ASCEND v3.0 — 优化 & ASO"
+    },
+    "desc": {
+      "fr": "Mots-clés Play Store, validation OAuth Google, améliorations UX.",
+      "en": "Play Store keywords, Google OAuth validation, UX improvements.",
+      "de": "Play Store-Keywords, Google OAuth-Validierung, UX-Verbesserungen.",
+      "it": "Parole chiave Play Store, validazione OAuth Google, miglioramenti UX.",
+      "es": "Palabras clave Play Store, validación OAuth Google, mejoras UX.",
+      "pt": "Palavras-chave Play Store, validação OAuth Google, melhorias UX.",
+      "zh": "Play Store关键词、谷歌OAuth验证、UX改进。"
+    }
+  },
+  {
+    "status": "soon",
+    "title": {
+      "fr": "SMSplode — Publication Production",
+      "en": "SMSplode — Production Release",
+      "de": "SMSplode — Produktionsveröffentlichung",
+      "it": "SMSplode — Pubblicazione Produzione",
+      "es": "SMSplode — Publicación en Producción",
+      "pt": "SMSplode — Publicação em Produção",
+      "zh": "SMSplode — 正式发布"
+    },
+    "desc": {
+      "fr": "Intégration AdMob, RGPD, correction widget, publication mondiale.",
+      "en": "AdMob integration, GDPR, widget fix, worldwide release.",
+      "de": "AdMob-Integration, DSGVO, Widget-Fix, weltweite Veröffentlichung.",
+      "it": "Integrazione AdMob, GDPR, correzione widget, pubblicazione mondiale.",
+      "es": "Integración AdMob, RGPD, corrección widget, publicación mundial.",
+      "pt": "Integração AdMob, LGPD, correção widget, publicação mundial.",
+      "zh": "AdMob集成、GDPR、小部件修复、全球发布。"
+    }
+  },
+  {
+    "status": "future",
+    "title": {
+      "fr": "Projet PULSAR — Jeu Mobile",
+      "en": "Project PULSAR — Mobile Game",
+      "de": "Projekt PULSAR — Mobilspiel",
+      "it": "Progetto PULSAR — Gioco Mobile",
+      "es": "Proyecto PULSAR — Juego Móvil",
+      "pt": "Projeto PULSAR — Jogo Mobile",
+      "zh": "PULSAR项目 — 手游"
+    },
+    "desc": {
+      "fr": "Réflexes circulaires avec IA adaptative. Phase 0 en cours.",
+      "en": "Circular reflexes with adaptive AI. Phase 0 in progress.",
+      "de": "Kreisförmige Reflexe mit adaptiver KI. Phase 0 in Arbeit.",
+      "it": "Riflessi circolari con IA adattiva. Fase 0 in corso.",
+      "es": "Reflejos circulares con IA adaptativa. Fase 0 en curso.",
+      "pt": "Reflexos circulares com IA adaptativa. Fase 0 em andamento.",
+      "zh": "自适应AI的环形反应游戏。第0阶段进行中。"
+    }
+  },
+  {
+    "status": "future",
+    "title": {
+      "fr": "Nouvelles Applications OrionWavesStudio",
+      "en": "New OrionWavesStudio Apps",
+      "de": "Neue OrionWavesStudio-Apps",
+      "it": "Nuove App OrionWavesStudio",
+      "es": "Nuevas Apps OrionWavesStudio",
+      "pt": "Novos Apps OrionWavesStudio",
+      "zh": "新的OrionWavesStudio应用"
+    },
+    "desc": {
+      "fr": "Notre pipeline continue — restez à l'écoute pour les prochaines annonces.",
+      "en": "Our pipeline continues — stay tuned for upcoming announcements.",
+      "de": "Unsere Pipeline läuft weiter — bleib auf dem Laufenden.",
+      "it": "La nostra pipeline continua — resta aggiornato per i prossimi annunci.",
+      "es": "Nuestro pipeline continúa — mantente atento para próximos anuncios.",
+      "pt": "Nosso pipeline continua — fique atento para os próximos anúncios.",
+      "zh": "我们的开发管线继续 — 敬请关注即将发布的公告。"
+    }
+  }
+]
