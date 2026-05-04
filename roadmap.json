@@ -44,13 +44,13 @@
   {
     "status": "active",
     "title": {
-      "fr": "ASCEND v3.0 — Optimisation & ASO",
-      "en": "ASCEND v3.0 — Optimization & ASO",
-      "de": "ASCEND v3.0 — Optimierung & ASO",
-      "it": "ASCEND v3.0 — Ottimizzazione & ASO",
-      "es": "ASCEND v3.0 — Optimización & ASO",
-      "pt": "ASCEND v3.0 — Otimização & ASO",
-      "zh": "ASCEND v3.0 — 优化 & ASO"
+      "fr": "ASCEND v3.0.1 — Optimisation & ASO",
+      "en": "ASCEND v3.0.1 — Optimization & ASO",
+      "de": "ASCEND v3.0.1 — Optimierung & ASO",
+      "it": "ASCEND v3.0.1 — Ottimizzazione & ASO",
+      "es": "ASCEND v3.0.1 — Optimización & ASO",
+      "pt": "ASCEND v3.0.1 — Otimização & ASO",
+      "zh": "ASCEND v3.0.1 — 优化 & ASO"
     },
     "desc": {
       "fr": "Mots-clés Play Store, validation OAuth Google, améliorations UX.",
