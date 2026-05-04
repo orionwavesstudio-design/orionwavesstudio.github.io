@@ -44,13 +44,13 @@
   {
   "status": "done",
   "title": {
-    "fr": "SMSplode — Lancement Production",
-    "en": "SMSplode — Production Launch",
-    "de": "SMSplode — Produktionsstart",
-    "it": "SMSplode — Lancio in Produzione",
-    "es": "SMSplode — Lanzamiento en Producción",
-    "pt": "SMSplode — Lançamento em Produção",
-    "zh": "SMSplode — 正式上线"
+    "fr": "SMSplode v1.0.0 — Lancement Production",
+    "en": "SMSplode v1.0.0 — Production Launch",
+    "de": "SMSplode v1.0.0 — Produktionsstart",
+    "it": "SMSplode v1.0.0 — Lancio in Produzione",
+    "es": "SMSplode v1.0.0 — Lanzamiento en Producción",
+    "pt": "SMSplode v1.0.0 — Lançamento em Produção",
+    "zh": "SMSplode v1.0.0 — 正式上线"
   },
   "desc": {
     "fr": "Bombardement SMS, animation 3D, sons custom, mode furtif, 10 destinataires. 177 pays.",
@@ -67,11 +67,11 @@
     "title": {
       "fr": "SMSplode v3.1.2 — Publication Production",
       "en": "SMSplode v3.1.2 — Production Release",
-      "de": "SMSplode v3.1.2  — Produktionsveröffentlichung",
-      "it": "SMSplode v3.1.2  — Pubblicazione Produzione",
-      "es": "SMSplode v3.1.2  — Publicación en Producción",
-      "pt": "SMSplode v3.1.2  — Publicação em Produção",
-      "zh": "SMSplode v3.1.2  — 正式发布"
+      "de": "SMSplode v3.1.2 — Produktionsveröffentlichung",
+      "it": "SMSplode v3.1.2 — Pubblicazione Produzione",
+      "es": "SMSplode v3.1.2 — Publicación en Producción",
+      "pt": "SMSplode v3.1.2 — Publicação em Produção",
+      "zh": "SMSplode v3.1.2 — 正式发布"
     },
     "desc": {
       "fr": "Intégration AdMob, RGPD, correction widget, publication mondiale.",
@@ -86,13 +86,13 @@
   {
   "status": "done",
   "title": {
-    "fr": "Projet PULSAR — Lancement Production",
-    "en": "Project PULSAR — Production Launch",
-    "de": "Projekt PULSAR — Produktionsstart",
-    "it": "Progetto PULSAR — Lancio in Produzione",
-    "es": "Proyecto PULSAR — Lanzamiento en Producción",
-    "pt": "Projeto PULSAR — Lançamento em Produção",
-    "zh": "PULSAR项目 — 正式上线"
+    "fr": "Projet PULSAR v1.0.0 — Lancement Production",
+    "en": "Project PULSAR v1.0.0 — Production Launch",
+    "de": "Projekt PULSAR v1.0.0 — Produktionsstart",
+    "it": "Progetto PULSAR v1.0.0 — Lancio in Produzione",
+    "es": "Proyecto PULSAR v1.0.0 — Lanzamiento en Producción",
+    "pt": "Projeto PULSAR v1.0.0 — Lançamento em Produção",
+    "zh": "PULSAR项目 v1.0.0 — 正式上线"
   },
   "desc": {
     "fr": "Jeu de réflexes circulaires avec IA adaptative. Disponible sur Google Play.",
