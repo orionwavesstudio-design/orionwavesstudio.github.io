@@ -44,13 +44,13 @@
   {
     "status": "done",
     "title": {
-      "fr": "ASCEND v3.0.1 — Optimisation & ASO",
-      "en": "ASCEND v3.0.1 — Optimization & ASO",
-      "de": "ASCEND v3.0.1 — Optimierung & ASO",
-      "it": "ASCEND v3.0.1 — Ottimizzazione & ASO",
-      "es": "ASCEND v3.0.1 — Optimización & ASO",
-      "pt": "ASCEND v3.0.1 — Otimização & ASO",
-      "zh": "ASCEND v3.0.1 — 优化 & ASO"
+      "fr": "ASCEND v3.0.0 — Optimisation & ASO",
+      "en": "ASCEND v3.0.0 — Optimization & ASO",
+      "de": "ASCEND v3.0.0 — Optimierung & ASO",
+      "it": "ASCEND v3.0.0 — Ottimizzazione & ASO",
+      "es": "ASCEND v3.0.0 — Optimización & ASO",
+      "pt": "ASCEND v3.0.0 — Otimização & ASO",
+      "zh": "ASCEND v3.0.0 — 优化 & ASO"
     },
     "desc": {
       "fr": "Mots-clés Play Store, validation OAuth Google, améliorations UX.",
@@ -62,6 +62,27 @@
       "zh": "Play Store关键词、谷歌OAuth验证、UX改进。"
     }
   },
+  {
+  "status": "done",
+  "title": {
+    "fr": "ASCEND v3.0.1 — Correctifs & Améliorations",
+    "en": "ASCEND v3.0.1 — Fixes & Improvements",
+    "de": "ASCEND v3.0.1 — Korrekturen & Verbesserungen",
+    "it": "ASCEND v3.0.1 — Correzioni & Miglioramenti",
+    "es": "ASCEND v3.0.1 — Correcciones & Mejoras",
+    "pt": "ASCEND v3.0.1 — Correções & Melhorias",
+    "zh": "ASCEND v3.0.1 — 修复与改进"
+  },
+  "desc": {
+    "fr": "Liens légaux PremiumScreen, site web intégré.",
+    "en": "Legal links PremiumScreen, website integrated.",
+    "de": "Rechtliche Links PremiumScreen, Website integriert.",
+    "it": "Link legali PremiumScreen, sito web integrato.",
+    "es": "Liens legales PremiumScreen, sitio web integrado.",
+    "pt": "Links legais PremiumScreen, site integrado.",
+    "zh": "法律链接PremiumScreen，网站已集成。"
+  }
+},
   {
     "status": "active",
     "title": {
