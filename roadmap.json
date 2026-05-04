@@ -63,7 +63,7 @@
     }
   },
   {
-    "status": "soon",
+    "status": "active",
     "title": {
       "fr": "SMSplode — Publication Production",
       "en": "SMSplode — Production Release",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "status": "future",
+    "status": "active",
     "title": {
       "fr": "Projet PULSAR — Jeu Mobile",
       "en": "Project PULSAR — Mobile Game",
