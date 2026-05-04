@@ -991,8 +991,10 @@ document.addEventListener('click',e=>{
 });
 
 (function(){
+  const urlParam=new URLSearchParams(window.location.search).get('lang');
   const saved=localStorage.getItem('ows_lang');
-  if(saved&&T[saved]){applyLang(saved);}
+  if(urlParam&&T[urlParam]){applyLang(urlParam);}
+  else if(saved&&T[saved]){applyLang(saved);}
   else{
     const bl=(navigator.language||navigator.userLanguage||'fr').toLowerCase().slice(0,2);
     const map={fr:'fr',en:'en',de:'de',it:'it',es:'es',pt:'pt',zh:'zh'};
