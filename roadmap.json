@@ -63,15 +63,15 @@
   }
 },
   {
-    "status": "active",
+    "status": "done",
     "title": {
-      "fr": "SMSplode v3.1.2 — Publication Production",
-      "en": "SMSplode v3.1.2 — Production Release",
-      "de": "SMSplode v3.1.2 — Produktionsveröffentlichung",
-      "it": "SMSplode v3.1.2 — Pubblicazione Produzione",
-      "es": "SMSplode v3.1.2 — Publicación en Producción",
-      "pt": "SMSplode v3.1.2 — Publicação em Produção",
-      "zh": "SMSplode v3.1.2 — 正式发布"
+      "fr": "SMSplode v3.1.3 — Publication Production",
+      "en": "SMSplode v3.1.3 — Production Release",
+      "de": "SMSplode v3.1.3 — Produktionsveröffentlichung",
+      "it": "SMSplode v3.1.3 — Pubblicazione Produzione",
+      "es": "SMSplode v3.1.3 — Publicación en Producción",
+      "pt": "SMSplode v3.1.3 — Publicação em Produção",
+      "zh": "SMSplode v3.1.3 — 正式发布"
     },
     "desc": {
       "fr": "Intégration AdMob, RGPD, correction widget, publication mondiale.",
@@ -105,26 +105,26 @@
   }
 },
   {
-    "status": "active",
-    "title": {
-      "fr": "Projet PULSAR v2.2.1 — Jeu Mobile",
-      "en": "Project PULSAR v2.2.1  — Mobile Game",
-      "de": "Projekt PULSAR v2.2.1  — Mobilspiel",
-      "it": "Progetto PULSAR v2.2.1  — Gioco Mobile",
-      "es": "Proyecto PULSAR v2.2.1  — Juego Móvil",
-      "pt": "Projeto PULSAR v2.2.1  — Jogo Mobile",
-      "zh": "PULSAR项目 — 手游"
-    },
-    "desc": {
-      "fr": "Réflexes circulaires avec IA adaptative. Phase 5 en cours.",
-      "en": "Circular reflexes with adaptive AI. Phase 5 in progress.",
-      "de": "Kreisförmige Reflexe mit adaptiver KI. Phase 5 in Arbeit.",
-      "it": "Riflessi circolari con IA adattiva. Fase 5 in corso.",
-      "es": "Reflejos circulares con IA adaptativa. Fase 5 en curso.",
-      "pt": "Reflexos circulares com IA adaptativa. Fase 5 em andamento.",
-      "zh": "利用自适应人工智能进行环形反射训练。第五阶段正在进行中。"
-    }
+  "status": "active",
+  "title": {
+    "fr": "Projet PULSAR v2.4.9 — Jeu Mobile",
+    "en": "Project PULSAR v2.4.9 — Mobile Game",
+    "de": "Projekt PULSAR v2.4.9 — Handyspiel",
+    "it": "Progetto PULSAR v2.4.9 — Gioco Mobile",
+    "es": "Proyecto PULSAR v2.4.9 — Juego Móvil",
+    "pt": "Projeto PULSAR v2.4.9 — Jogo Mobile",
+    "zh": "PULSAR项目 v2.4.9 — 手机游戏"
   },
+  "desc": {
+    "fr": "Réflexes circulaires avec IA adaptative. Phase test fermés",
+    "en": "Circular reflexes with adaptive AI. Closed testing phase.",
+    "de": "Kreisförmige Reflexe mit adaptiver KI. Geschlossene Testphase.",
+    "it": "Riflessi circolari con IA adattiva. Fase di test chiusa.",
+    "es": "Reflejos circulares con IA adaptativa. Fase de prueba cerrada.",
+    "pt": "Reflexos circulares com IA adaptativa. Fase de teste fechado.",
+    "zh": "利用自适应人工智能进行环形反射训练。封闭测试阶段。"
+  }
+},
   {
     "status": "future",
     "title": {
