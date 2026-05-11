@@ -2,13 +2,13 @@
   {
     "status": "done",
     "title": {
-      "fr": "ASCEND v1.0 — Lancement Production",
-      "en": "ASCEND v1.0 — Production Launch",
-      "de": "ASCEND v1.0 — Produktionsstart",
-      "it": "ASCEND v1.0 — Lancio in Produzione",
-      "es": "ASCEND v1.0 — Lanzamiento en Producción",
-      "pt": "ASCEND v1.0 — Lançamento em Produção",
-      "zh": "ASCEND v1.0 — 正式上线"
+      "fr": "ASCEND v1.0.0 — Lancement Production",
+      "en": "ASCEND v1.0.0 — Production Launch",
+      "de": "ASCEND v1.0.0 — Produktionsstart",
+      "it": "ASCEND v1.0.0 — Lancio in Produzione",
+      "es": "ASCEND v1.0.0 — Lanzamiento en Producción",
+      "pt": "ASCEND v1.0.0 — Lançamento em Produção",
+      "zh": "ASCEND v1.0.0 — 正式上线"
     },
     "desc": {
       "fr": "Suivi d'humeur, XP, niveaux, badges, routines. 177 pays, 6 langues.",
