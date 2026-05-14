@@ -107,13 +107,13 @@
   {
   "status": "active",
   "title": {
-    "fr": "Projet PULSAR v2.4.9 — Jeu Mobile",
-    "en": "Project PULSAR v2.4.9 — Mobile Game",
-    "de": "Projekt PULSAR v2.4.9 — Handyspiel",
-    "it": "Progetto PULSAR v2.4.9 — Gioco Mobile",
-    "es": "Proyecto PULSAR v2.4.9 — Juego Móvil",
-    "pt": "Projeto PULSAR v2.4.9 — Jogo Mobile",
-    "zh": "PULSAR项目 v2.4.9 — 手机游戏"
+    "fr": "Projet PULSAR v2.6.0 — Jeu Mobile",
+    "en": "Project PULSAR v2.6.0 — Mobile Game",
+    "de": "Projekt PULSAR v2.6.0 — Handyspiel",
+    "it": "Progetto PULSAR v2.6.0 — Gioco Mobile",
+    "es": "Proyecto PULSAR v2.6.0 — Juego Móvil",
+    "pt": "Projeto PULSAR v2.6.0 — Jogo Mobile",
+    "zh": "PULSAR项目 v2.6.0 — 手机游戏"
   },
   "desc": {
     "fr": "Réflexes circulaires avec IA adaptative. Phase test fermés",
